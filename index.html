@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Dialog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/img_1.jpg" class="img-header" />
+      <div>
+        <h1 class="header-text">TechTutor🤖....</h1>
+        <h2 class="header-text">"Where Knowledge Meets Confidence"🤝</h2>
+        <img src="./images/img_qr.jpg" class="img-qr"/>
+        <p class="qr-description">
+         Wanna know more about us!!!!..Do scan above QR code✨
+        </p>
+      </div>
+    </div>
+
+    <button type="button" class="btn" onclick="openModal()">Enroll Now</button>
+
+    <div class="overlay" id="overlay">
+      <div class="modal">
+        <img
+          src="./images/exit_img.png"
+          class="close-icon"
+          alt="Close"
+          onclick="closeModal()" />
+        <form class="form">
+
+          <h1 class="form-header">Enroll Now</h1>
+
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="form-input"
+          />
+
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="form-input"
+          />
+
+          <input
+            type="text"
+            placeholder="Enter your phone number"
+            class="form-input"
+          />
+
+          <input
+            type="text"
+            placeholder="College/School Name"
+            class="form-input"
+          />
+        </form>
+
+        <button type="button" class="btn">
+          Proced to Payment
+        </button>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
